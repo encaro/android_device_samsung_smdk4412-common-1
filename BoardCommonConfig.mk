@@ -56,6 +56,12 @@ LZMA_RAMDISK_TARGETS := recovery
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 
+# The set of packages we want to force 'speed' compilation on.
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+  SystemUI \
+  Settings \
+  TrebuchetQuickStep
+
 # Filesystem
 #BOARD_NAND_PAGE_SIZE := 4096
 #BOARD_NAND_SPARE_SIZE := 128
